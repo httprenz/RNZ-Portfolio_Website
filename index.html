@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="A personal Portfolio By Renzi Delposo"
+  />
+  <meta
+    property="og:title"
+    content="RNZ - A personal Portfolio By Renzi Delposo"
+  />
+  <meta
+    property="og:description"
+    content="RNZ is an Personal Portfolio. to showcase my skills and ability to work with new technologies"
+  />
+  <meta property="og:type" content="website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>RNZ | Portfolio</title>
+</head>
+<body>
+  <!--Navbar  -->
+  <header>
+    <nav  class="bg-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900  fixed w-full z-20 top-0 left-0 dark:border-gray-600">
+      <div class="container flex flex-wrap items-center justify-between mx-auto ">
+        <a href="#?home?delposo" class="flex items-center">
+          <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">RNZ</span>
+        </a>
+        <div class="flex md:order-2">
+          <button id="theme-toggle" type="button"
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="dark" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="yellow" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <button data-collapse-toggle="navbar-sticky" type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul
+            class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium md:border-0 md:bg-gray-200 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#"
+                class=" block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#about"
+                class=" block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="#portfolio"
+                class=" block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Portfolio</a>
+            </li>
+            <li>
+              <button id="updateProductButton" data-modal-toggle="updateProductModal"
+                class=" block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- CONTACT Main modal -->
+<div id="updateProductModal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full">
+  <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+      <!-- Modal content -->
+      <div class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
+          <!-- Modal header -->
+          <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
+            <h3 class="text-2xl tracking-tight font-bold text-center text-gray-900 dark:text-white">Contact Me</h3>
+              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="updateProductModal">
+                  <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  <span class="sr-only">Close modal</span>
+              </button>
+          </div>
+          <p class="lg:mb-10 font-light text-center text-gray-500 dark:text-gray-400 sm:text-lg">Let's Build
+            Something Amazing Together!</p>
+          <p class="mb-8 lg:mb-16 font-light text-justify text-gray-500 dark:text-gray-400 sm:text-base">
+            As a freelance web developer, I'm passionate about creating exceptional websites that not only look
+            great but also deliver an excellent user experience. I'm currently looking for new opportunities, and my
+            inbox is always open. Whether you have a question about my services or just want to say hi, I'm here to
+            listen and help. So, if you're ready to take your website to the next level, let's connect! I'll do my
+            best to get back to you as soon as possible.</p>
+          <!-- Modal body -->
+          <form action="https://formspree.io/f/xvonakkd" method="POST" class="space-y-8">
+              <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                  <div>
+                      <label  for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                      <input type="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="example@gmail.com" required>
+                  </div>
+                  <div>
+                      <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+                      <input type="text" name="subject" id="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Write a Subject here..." required>
+                  </div>
+                  <div class="sm:col-span-2">
+                      <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+                      <textarea id="description" rows="5" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Write a Message here.."  required></textarea>                    
+                  </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                  <button target="_blank" type="submit" class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0" required>
+                        Send
+                    </span>
+                  </button>
+                  
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+  </header>
+  <!-- HERO -->
+  <section class="pb-11 bg-gray-200 dark:bg-gray-900 hero_container">
+    <div  class=" grid max-w-screen-xl px-4 py-9  mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+      <div class="mr-auto place-self-center lg:col-span-7">
+        <div class="header_container">
+          <h1 data-aos="zoom-in-up"
+            class=" whitespace-normal main_heading max-w-md mb-4 text-lg font-normal tracking-tight leading-none md:text-lg xl:text-xl dark:text-white">
+            Hi there, I am</h1>
+          <h1 data-aos="zoom-in-up"
+            class=" whitespace-normal main_heading max-w-3xl mb-4 text-5xl font-extrabold tracking-tight leading-none md:text-6xl xl:text-7xl dark:text-white">
+            Renzi Delposo</h1>
+            <h1 data-aos="zoom-in-up"
+            class=" whitespace-normal main_heading max-w-3xl mb-4 text-2xl font-bold tracking-tight leading-none md:text-xl xl:text-2xl dark:text-white">
+            I create stuff for the web.</h1>
+          <p data-aos="zoom-in-up"
+            class=" whitespace-normal heading_content max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            A Front-End/Web Developer based in the Philippines. I specialize in creating/managing user-friendly,
+            aesthetically pleasing websites. I use HTML, CSS, JavaScript, Tailwind & other web dev languages to create unique &
+            interactive sites tailored to client needs.
+          </p>
+        </div>
+        <div class="btn_container flex">
+          <button id="updateProductButton" data-modal-toggle="updateProductModal"
+            class="btn inline-flex items-center justify-center  px-5 py-3 mr-3 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm  text-center  mb-2">
+            GET IN TOUCH &nbsp;
+            <svg class="svg-inline--fa fa-paper-plane w-4" aria-hidden="true" focusable="false" data-prefix="fas"
+              data-icon="paper-plane" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+              data-v-3acc9978="">
+              <path class="" fill="currentColor"
+                d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L277.3 424.9l-40.1 74.5c-5.2 9.7-16.3 14.6-27 11.9S192 499 192 488V392c0-5.3 1.8-10.5 5.1-14.7L362.4 164.7c2.5-7.1-6.5-14.3-13-8.4L170.4 318.2l-32 28.9 0 0c-9.2 8.3-22.3 10.6-33.8 5.8l-85-35.4C8.4 312.8 .8 302.2 .1 290s5.5-23.7 16.1-29.8l448-256c10.7-6.1 23.9-5.5 34 1.4z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div data-aos="zoom-in" class="hidden lg:mt-0 lg:col-span-4 lg:flex">
+        <img src="/images/banner.png" alt="mockup">
+      </div>
+    </div>
+  </section>
+  <!--ABOUT  -->
+  <section  class="bg-gray-200 dark:bg-gray-900" id="about">
+    <h2 class="text-center mb-4 text-4xl tracking-tight font-extrabold text-gray-900 pt-17 dark:text-white">About Me</h2>
+    <p 
+    data-aos-duration="1000" class="text-center mb-3 text-lg tracking-tight font-sm text-gray-900 dark:text-gray-500">Personal</p>
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+      <div  data-aos="zoom-in" data-aos-easing="linear"
+       class="about_cootent font-light text-gray-500 sm:text-lg dark:text-gray-400">
+        <p class="mb-4">As a third-year college student studying BS Information Technology at Rizal Technological
+          University, I am an aspiring web developer with a focus on creating responsive and visually appealing web and
+          mobile applications. I am dedicated to developing my skills and expanding my knowledge in the field of web
+          development.</p>
+        <p data-aos="zoom-in">I am constantly looking for new opportunities to improve my skills and gain experience in the field of web
+          development and Design. Additionally My ultimate goal is to become a professional web developer and to work on
+          exciting and challenging projects that will help me to grow as a developer.</p>
+        <a target="_blank" href="/Delposo_Renzi.pdf"
+          class="btn inline-flex items-center justify-center px-5 py-3 mr-3 mt-5 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm  text-center  mb-2">
+          Download Resume &nbsp;
+          <svg class="svg-inline--fa fa-circle-arrow-down w-4" aria-hidden="true" focusable="false" data-prefix="fas"
+            data-icon="circle-arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path class="" fill="currentColor"
+              d="M256 0C114.6 0 0 114.6 0 256S114.6 512 256 512s256-114.6 256-256S397.4 0 256 0zM127 297c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l71 71L232 120c0-13.3 10.7-24 24-24s24 10.7 24 24l0 214.1 71-71c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 409c-9.4 9.4-24.6 9.4-33.9 0L127 297z">
+            </path>
+          </svg>
+        </a>
+      </div>
+      <figure class="grid grid-cols-2 gap-4 mt-8 ">
+        <img data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" class="w-full rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+          src="/images/renzi.png" alt="office content 1">
+        <img data-aos="fade-up"
+        data-aos-duration="3000"
+          class="mt-4 w-full lg:mt-10 rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+          src="/images/SIGE.jpg" alt="office content 2">
+      </figure>
+    </div>
+  </section>
+  <!--SKILLS  -->
+  <section class="bg-gray-200 dark:bg-gray-900">
+    <div  data-aos="fade-up"
+    data-aos-anchor-placement="top-center" class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">SKILLS</h2>
+        <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets
+          where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+      </div>
+      <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+        <!-- FRONT END  -->
+        <div
+          class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-gray-100 rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <h3 class="mb-4 text-2xl font-semibold">Frontend Development</h3>
+          <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next
+            project.</p>
+          <div class=" description grid grid-cols-3  gap-4 m-auto lg:px-10 px-5 pt-10">
+            <div class="p-1 card-mini">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png?20120221235433"
+                class="h-12" alt="JavaScript" />
+              <span class="dark:text-white">JavaScript</span>
+            </div>
+            <div class="p-1 card-mini">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/600px-Tailwind_CSS_Logo.svg.png?20211001194333"
+                class="h-12" alt="Tailwind" />
+              <span class="dark:text-white">Tailwind</span>
+            </div>
+            <div class="p-1 card-mini">
+              <img src="https://seeklogo.com/images/B/bootstrap-logo-3C30FB2A16-seeklogo.com.png" class="h-12"
+                alt="Bootstrap" />
+              <span class="dark:text-white">Bootstrap</span>
+            </div>
+            <div class="p-1 card-mini">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/130px-HTML5_logo_and_wordmark.svg.png"
+                alt="HTML5" class="h-12" />
+              <span class="dark:text-white">HTML5</span>
+            </div>
+            <div class="p-1 card-mini">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png"
+                class="h-12" alt="CSS" />
+              <span class="dark:text-white">CSS</span>
+            </div>
+          </div>
+        </div>
+        <!-- BACK END -->
+        <div
+          class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-gray-100 rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <h3 class="mb-4 text-2xl font-semibold">Backend Development</h3>
+          <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users, extended &
+            premium support.</p>
+          <!-- List -->
+          <div class="description grid grid-cols-2  gap-1 m-auto lg:px-10 px-5 pt-10">
+            <div class="p-1 card-mini">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" class="h-12" alt="PHP" />
+              <span class="dark:text-white">PHP</span>
+            </div>
+            <div class="p-1 card-mini">
+              <img
+                src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png"
+                class="h-12" alt="Mysql" />
+              <span class="dark:text-white">Mysql</span>
+            </div>
+          </div>
+        </div>
+        <!-- Other skills -->
+        <div
+          class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-gray-100 rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <h3 class="mb-4 text-2xl font-semibold">Other Skills</h3>
+          <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users, extended &
+            premium support.</p>
+          <!-- List -->
+          <div class="description grid grid-cols-4  gap-4  m-auto lg:px-10 px-5 pt-10">
+            <div class="p-1 card-mini">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" class="h-13"
+                alt="C++" />
+              <span class="dark:text-white">C++</span>
+            </div>
+            <div class="p-1 card-mini">
+              <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" class="h-12"
+                alt="Java" />
+              <span class="dark:text-white">Java</span>
+            </div>
+            <div class="p-1 card-mini">
+              <img src="https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png" class="h-13"
+                alt="Github" />
+              <span class="dark:text-white">Github</span>
+            </div>
+            <div class="p-1 card-mini">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" class="h-13"
+                alt="Python" />
+              <span class="dark:text-white">Python</span>
+            </div>
+            <div class="p-1 card-mini">
+              <img
+                src="https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=670&h=670&q=75&fit=max&auto=format"
+                class="h-13" alt="Figma" />
+              <span class="dark:text-white">Figma</span>
+            </div>
+            <div class="p-1 card-mini">
+              <img
+                src="https://assets-global.website-files.com/60058af53d79fbd8e14841ea/6016c5d7eaca0a225f621fd0_Tg7Mrqk2.png"
+                class="h-13" alt="Webflow" />
+              <span class="dark:text-white">Webflow</span>
+            </div>
+            <div class="p-1 card-mini">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Wordpress-Logo.svg" class="h-13"
+                alt="Wordpress" />
+              <span class="dark:text-white">Wordpress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio  -->
+  <section id="portfolio" class="bg-gray-200 dark:bg-gray-900">
+    <div  class="porfolio px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">PROJECTS</h2>
+        <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets
+          where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+      </div>
+      <div data-aos="fade-right"
+        class="porfolio gap-8 items-center py-0 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <img class="w-full dark:hidden" src="/images/Reachout.png" alt="dashboard image">
+        <img class="w-full hidden dark:block" src="/images/Reachout.png" alt="dashboard image">
+        <div class="mt-4 md:mt-0 ">
+          <h2 class="mb-4  text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Reach Out</h2>
+          <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Reach.Out is a mental health Website
+            dedicated to the belief that mental health matters and that no one should be alone. We strive to provide
+            resources, support and education to those struggling with mental health issues. Our team of mental health
+            professionals is dedicated to helping individuals and families better understand and manage their mental
+            health.</p>
+          <a target="_blank" href="https://reach-out203.netlify.app/"
+            class="btn inline-flex items-center justify-center px-5 py-3 mr-3 mt-5 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm  text-center  mb-2">
+            Learn More
+            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    <div data-aos="fade-left" class="porfolio  py-0  mx-auto max-w-screen-xl lg:py-0 lg:px-6">
+      <div
+        class="gap-8 items-center px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <div class="mt-4 md:mt-0 ">
+          <h2 class="mb-4  text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Employee Management System-Basic</h2>
+          <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">A Basic Employee Management System Build In Php</p>
+          <a target="_blank" href="https://github.com/httprenz/Employee_management_system.git"
+            class="btn inline-flex items-center justify-center px-5 py-3 mr-3 mt-5 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm  text-center  mb-2">
+            Learn More
+            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+        <img class="w-full dark:hidden" src="/images/EMS.png" alt="dashboard image">
+        <img class="w-full hidden dark:block" src="/images/EMS.png" alt="dashboard image">
+      </div>
+    </div>
+    <div data-aos="fade-right"
+    class="porfolio gap-8 items-center px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+    <img class="w-full dark:hidden" src="/images/ERO.png" alt="dashboard image">
+    <img class="w-full hidden dark:block" src="/images/ERO.png" alt="dashboard image">
+    <div class="mt-4 md:mt-0 ">
+      <h2 class="mb-4  text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Erovoutika Academy Dashboard</h2>
+      <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">A Academy Dashboard for Erovoutika Company build in PHP</p>
+      <a target="_blank" href="https://github.com/httprenz"
+        class="btn inline-flex items-center justify-center px-5 py-3 mr-3 mt-5 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm  text-center  mb-2">
+        Learn More
+        <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+  </section>
+</div>
+  <!--Footer -->
+  <footer class="py-7 bg-gray-200 md:p-8 lg:p-10 dark:bg-gray-900">
+    <div class="mx-auto max-w-screen-xl text-center">
+      <a href="/index.html" class="flex justify-center pb-9 items-center text-3xl font-bold text-white-900 dark:text-white">
+        RNZ
+      </a>
+      <ul class="wrapper flex justify-center">
+        <a target="_blank" href="https://www.facebook.com/httprenzi/">
+        <li class="icon facebook">
+          <span class="tooltip">Facebook</span>
+          <span><i class="fa fa-facebook-f"></i></span>
+        </li>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/httprenz/">
+        <li class="icon instagram">
+          <span class="tooltip">instagram</span>
+          <span><i class="fa fa-instagram"></i></span>
+        </li>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/renzi-delposo-922232233/">
+        <li class="icon facebook">
+          <span class="tooltip">Linkedin</span>
+          <span><i class="fa fa-linkedin"></i></span>
+        </li>
+      </a>
+        <a target="_blank" href="https://github.com/httprenz">
+        <li class="icon github">
+          <span class="tooltip">Github</span>
+          <span><i class="fa fa-github"></i></span>
+        </li>
+      </a>
+      </ul>
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 Designed & Built by Renzi Delposo.</span>
+    </div>
+  </footer>
+  <script type="module" src="/main.js"></script>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
